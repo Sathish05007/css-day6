@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f4f4f9;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .demo {
+      border: 2px solid #ccc;
+      padding: 10px;
+      margin-bottom: 30px;
+      background: white;
+    }
+
+    .container {
+      display: flex;
+      border: 1px solid #999;
+      padding: 10px;
+      min-height: 100px;
+      background: #fafafa;
+      gap: 10px;
+    }
+
+    .item {
+      background: #4da6ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      flex: 0 1 100px; /* default size */
+    }
+
+    /* For individual item testing */
+    .special {
+      background: #ff704d;
+    }
+  </style>
 </head>
 <body>
-    <h1>css flex box</h1>
+
+  <h1>CSS Flexbox Examples</h1>
+
+  <!-- flex-direction -->
+  <h2>1. flex-direction</h2>
+  <div class="demo">
+    <div class="container" style="flex-direction: row;">
+      <div class="item">Row 1</div>
+      <div class="item">Row 2</div>
+      <div class="item">Row 3</div>
+    </div>
+    <br>
+    <div class="container" style="flex-direction: column;">
+      <div class="item">Column 1</div>
+      <div class="item">Column 2</div>
+      <div class="item">Column 3</div>
+    </div>
+  </div>
+
+  <!-- justify-content -->
+  <h2>2. justify-content</h2>
+  <div class="demo">
+    <div class="container" style="justify-content: space-between;">
+      <div class="item">One</div>
+      <div class="item">Two</div>
+      <div class="item">Three</div>
+    </div>
+    <br>
+    <div class="container" style="justify-content: center;">
+      <div class="item">Centered 1</div>
+      <div class="item">Centered 2</div>
+    </div>
+  </div>
+
+  <!-- align-items -->
+  <h2>3. align-items</h2>
+  <div class="demo">
+    <div class="container" style="align-items: flex-start; height: 150px;">
+      <div class="item" style="height:40px;">Top</div>
+      <div class="item" style="height:80px;">Middle</div>
+      <div class="item" style="height:120px;">Bottom</div>
+    </div>
+    <br>
+    <div class="container" style="align-items: center; height: 150px;">
+      <div class="item" style="height:40px;">Center</div>
+      <div class="item" style="height:80px;">Center</div>
+      <div class="item" style="height:120px;">Center</div>
+    </div>
+  </div>
+
+  <!-- flex-wrap -->
+  <h2>4. flex-wrap</h2>
+  <div class="demo">
+    <div class="container" style="flex-wrap: wrap;">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+    </div>
+  </div>
+
+  <!-- flex-grow, shrink, basis -->
+  <h2>5. flex (grow, shrink, basis)</h2>
+  <div class="demo">
+    <div class="container">
+      <div class="item" style="flex:1;">Grow 1</div>
+      <div class="item" style="flex:2;">Grow 2</div>
+      <div class="item" style="flex:3;">Grow 3</div>
+    </div>
+  </div>
+
+  <!-- order -->
+  <h2>6. order</h2>
+  <div class="demo">
+    <div class="container">
+      <div class="item" style="order:3;">First visually</div>
+      <div class="item" style="order:1;">Second visually</div>
+      <div class="item" style="order:2;">Third visually</div>
+    </div>
+  </div>
+
+  <!-- align-self -->
+  <h2>7. align-self</h2>
+  <div class="demo">
+    <div class="container" style="align-items: flex-start; height:150px;">
+      <div class="item">Normal</div>
+      <div class="item special" style="align-self:flex-end;">Self-end</div>
+      <div class="item">Normal</div>
+    </div>
+  </div>
+
+  <!-- gap -->
+  <h2>8. gap</h2>
+  <div class="demo">
+    <div class="container" style="gap: 30px;">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+  </div>
+
 </body>
 </html>
