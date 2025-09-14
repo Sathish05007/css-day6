@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 80vh;
+    background-image: url(burger-hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header h1{
+    position: relative;
+    top: 500px;
+    color: gray;
+    cursor: pointer;
+    width: max-content;
+    padding: 5px 30px;
+    font-family: cursive;
+}
+
+.nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: cursive;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 20px gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+
+    .nav-left:hover{
+        cursor: pointer;
+        text-decoration: underline 3px gray;
+    }
+.nav-right a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+}
+.nav-right a:hover{
+    cursor: pointer;
+    text-decoration: underline 2px gray;
+    color: gray;
+}
+}
+.main {
+      margin: auto;
+      width: 80%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      
+    
+    }
+    .c1,.c2,.c3 {
+      width: 90%;
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      margin: 10px;
+      margin-bottom: 10px;
+      background-color: whitesmoke;
+      border-radius: 20px;
+    }
+    .c1:hover,.c2:hover,.c3:hover{
+        cursor: pointer;
+        box-shadow: 2px 2px 20px gray;
+    }
+    .c1-i1,.c1-i2,.c2-i1,.c2-i2,.c3-i1,.c3-i2 {
+      width: 42%;
+      height: auto;
+      margin: 20px;
+      /* border: 2px red solid; */
+    }
+.c1-i1 img{
+    height: 80vh;
+    border-radius: 20px;
+}
+.c1-i2{
+    text-align: center;
+    width: 50%;
+}
+.c1-i2 h2{
+    margin: 30px;
+    font-family: cursive;
+    font-size: 30px;
+}
+.c1-i2 h4{
+    font-size: 20px;
+    font-family: monospace;
+    margin-top: 50px;
+}
+.c1-i2 p{
+    margin: 10px;
+    font-size: 18px;
+    font-family: cursive;
+}
+.c2-i1 h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+}
+.c2 .items{
+    display: flex;
+    flex-direction: column;
+}
+.items .i1{
+    margin: 20px;
+    text-align: center;
+    height: 10vh;
+}
+.i1 h4{
+    margin: 10px;
+    font-family: cursive;
+}
+.i1 p{
+    font-family: monospace;
+    font-size: 15px;
+}
+.c2-i2 img{
+    height: 80vh;
+    width: 100%;
+    border-radius: 20px;
+}
+.c3-i1{
+    width: 90%;
+}
+.c3-i1 h2{
+    text-align: left;
+    font-family: cursive;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.c3-i1 p{
+    font-family: monospace;
+    font-size: 15px;
+    margin: 10px;
+}
+.c3-i1 h4{
+    font-family: cursive;
+    color: rgb(32, 119, 119);
+    margin: 10px;
+}
+.form{
+    display: block;
+}
+.form input{
+    width: 95%;
+    height: 7vh;
+    border: none;
+    border-radius: 1px gray sol;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.form input:hover{
+    cursor: pointer;
+}
+.form button{
+    margin: 10px;
+    background-color: rgba(128, 128, 128, 0.467);
+    padding: 8px 30px;
+    border: 1px  rgba(128, 128, 128, 0.467)solid;
+    border-radius: 10px;
+    color: white;
+}
+.form button:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+footer{
+    border: 1px rgba(128, 128, 128, 0.51) solid;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.51);
+}
+footer p{
+    font-size: 20px;
+    font-family: cursive;
+}
+footer p a{
+    color: rgb(38, 126, 126);
+}
+
+
+@media (max-width:425px){
+    
+}
